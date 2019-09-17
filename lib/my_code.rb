@@ -40,7 +40,7 @@ end
 def reduce_to_all_true(source_array)
   return_t = true
   source_array.length.times { |index|
-    if (source_array[i] == nil || source_array[i] == false)
+    if (source_array[index] == nil || source_array[index] == false)
       return_t = false
     end
   }
