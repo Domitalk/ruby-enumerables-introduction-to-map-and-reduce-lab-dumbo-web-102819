@@ -16,7 +16,7 @@ end
 def map_to_double(source_array)
   array1 = []
   source_array.length.times { |index|
-    array1 = (source_array[index] * 2)
+    array1[index] = (source_array[index] * 2)
   }
   return array1
 end
