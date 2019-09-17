@@ -38,19 +38,13 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  i = 0
-  while i < source_array.length do
-    if (source_array[i] == nil || source_array[i] == false)
-      return false
-    else
-      i += 1
+  return_t = true
+  source_array.length.times { |index|
+    if source_array[i] == nil || source_array[i] == false
+      return_t = false
     end
-  end
-  if i == source_array.length
-    return true
-  else
-    return false
-  end
+  }
+  return_t
 end
 
 def reduce_to_any_true(source_array)
