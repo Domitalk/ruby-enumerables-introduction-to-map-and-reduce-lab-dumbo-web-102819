@@ -42,9 +42,9 @@ def reduce_to_all_true(source_array)
   source_array.length.times { |index|
     if reduction == false
       reduction = false
-    if source_array[index] == true 
+    if source_array[index] == true
       reduction = true
-    else 
+    else
       reduction = false
   }
   reduction
