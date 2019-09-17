@@ -62,5 +62,6 @@ def reduce_to_any_true(source_array)
     else
       i += 1
     end
+  end
   return_val
 end
