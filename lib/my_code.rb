@@ -45,6 +45,21 @@ def reduce_to_all_true(source_array)
     end
   }
   return_t
+
+  # Solution 1
+  # i = 0 
+  # while i < source_array.length do
+  #   if (source_array[i] == nil || source_array[i] == false) 
+  #      return false
+  #   else 
+  #      i += 1
+  #   end 
+  # end
+  # if i == source_array.length 
+  #   return true
+  # else 
+  #   return false
+  # end 
 end
 
 def reduce_to_any_true(source_array)
