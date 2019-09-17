@@ -38,17 +38,14 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  counter = 0
-  while counter <= source_array.length do
-    if source_array[counter]
-      counter += 1
-    else
-      return false
-    end
-  end
-  if counter == source_array.length
-    return true
-  else
-    return false
-  end
+  reduction = true
+  source_array.length.times { |index|
+    if reduction == false
+      reduction = false
+    if source_array[index] == true 
+      reduction = true
+    else 
+      reduction = false
+  }
+  reduction
 end
