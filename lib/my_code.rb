@@ -33,7 +33,7 @@ def reduce_to_total(source_array, starting_point = "0")
   counter = starting_point
   total_temp = 0
   while counter < source_array.length do
-    total_temp += source_array[counter]
+    total_temp = source_array[counter] + total_temp
     counter += 1
   end
   return total_temp
