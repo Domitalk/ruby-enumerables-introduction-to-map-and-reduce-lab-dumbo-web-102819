@@ -20,3 +20,11 @@ def map_to_double(source_array)
   }
   return array1
 end
+
+def map_to_square(source_array)
+  array2 = []
+  source_array.length.times { |index|
+    array2[index] = source_array[index] * source_array[index]
+  }
+  return array2
+end
