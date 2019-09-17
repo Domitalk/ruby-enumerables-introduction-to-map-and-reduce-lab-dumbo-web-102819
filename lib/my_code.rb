@@ -48,13 +48,11 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
-  i = 0
   return_val = false
-  while i < source_array.length do
-    if source_array[i] == true
+  source_array.length.times { |index|
+    if source_array[index] == true
       return_val = true
     end
-    i += 1
-  end
+  }
   return_val
 end
