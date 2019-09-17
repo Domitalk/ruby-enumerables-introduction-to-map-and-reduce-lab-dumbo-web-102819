@@ -36,3 +36,16 @@ def reduce_to_total(source_array, starting_point = 0)
   }
   running_total
 end
+
+def reduce_to_all_true(source_array)
+  i = 0
+  while i < source_array.length do
+    while source_array[i] do
+      i += 1
+    end
+  end
+  if i == source_array.length 
+    return true
+  else 
+    return false
+end
