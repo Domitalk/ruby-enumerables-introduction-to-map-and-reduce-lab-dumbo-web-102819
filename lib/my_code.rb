@@ -40,13 +40,13 @@ end
 def reduce_to_all_true(source_array)
   counter = 0
   while counter <= source_array.length do
-    if source_array[counter] do
+    if source_array[counter]
       counter += 1
     else
       return false
     end
   end
-  if counter == source_array.length do
+  if counter == source_array.length
     return true
   else
     return false
