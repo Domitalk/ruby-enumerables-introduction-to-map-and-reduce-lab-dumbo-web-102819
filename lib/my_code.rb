@@ -1,7 +1,7 @@
 def map_to_negativize(source_array)
   source_array_1 = []
   source_array.length.times { |index|
-     source_array_1[index] = (source_array[index] * -1)
+     source_array_1[index] = source_array[index] * -1
   }
   source_array_1
 end
