@@ -40,7 +40,7 @@ end
 def reduce_to_all_true(source_array)
   i = 0
   while i < source_array.length do
-    while source_array[i] do
+    while source_array[i] != nil do
       i += 1
     end
   end
